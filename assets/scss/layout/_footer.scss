@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as v;
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: v.$spaceThick;
+    gap: v.$spaceUltraThick;
+    @media screen and (max-width: 520px){
+        flex-direction: column;
+        gap: v.$spaceRegular;
+        align-items: left;
+
+    }
+
+    .container {
+        gap: v.$spaceRegular;
+        width: v.$pageWidth;
+        @media screen and (max-width: 520px){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        span {
+            @media screen and (max-width: 520px){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as v;
+
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    width: v.$fullWidth;
+    min-height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+    @media screen and (max-width: 520px){
+        padding-top: 120px;
+        min-height: 800px;
+    }
+    .container {
+        width: v.$pageWidth;
+        h2 {
+            font-size: 4rem;
+            max-width: 14ch;
+            line-height: 1.2;
+            @media screen and (max-width: 520px){
+                font-size: 3rem;
+            }
+            @media screen and (max-width: 480px){
+                font-size: 2rem;
+            }
+
+
+        }
+        p {
+            color: v.$sliceFinance_primary;
+            font-size: 1.2rem;
+        }
+        .box-row {
+            margin-top: v.$spaceUltraThick;
+            @media screen and (max-width: 520px){
+                flex-direction: column;
+            }
+        }
+    }
+
+}
+
+.half {
+    display: flex;
+    width: 40vw;
+    height: 80vw;
+    background-color: v.$sliceFinance_primary;
+    position: absolute;
+    right: 0;
+    border-radius: 40vw 0 0 40vw;
+    z-index: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (max-width: 780px) {
+        position: relative;
+        width: calc(100% - v.$spaceThick);
+        margin-top: 140px;
+        margin-bottom: 2rem;
+        margin-left: v.$spaceThick;
+    }
+    @media screen and (max-width: 520px) {
+        margin-top: 0;
+    }
+}

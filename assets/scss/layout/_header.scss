@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as v;
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: v.$spaceThick 0;
+    width: v.$fullWidth;
+    z-index: 1;
+    .container {
+        width: v.$fullWidth;
+        .label {
+            display: none;
+        }
+        .main-logo {
+            width: 200px;
+            max-width: 100%;
+        }
+        .socials {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            gap: v.$spaceMedium;
+            a {
+                img {
+                    display: flex;
+                    width: v.$spaceRegular;
+                    aspect-ratio: 1;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+.overlay-header {
+    position: absolute;
+}
+

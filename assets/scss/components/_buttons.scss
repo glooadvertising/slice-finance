@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as v;
+
+button, .btn {
+    background-color: v.$sliceFinance_secondary;
+    color: v.$sliceFinance_white;
+    padding-block: none;
+    padding-inline: none;
+    padding: v.$spaceThin v.$spaceThick;
+    font-family: v.$sliceFinanceBold;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    transition: v.$tranSimple;
+    cursor: pointer;
+    &:hover {
+        background-color: v.$sliceFinance_primary;
+        color: v.$sliceFinance_white;
+    }
+}

@@ -1,0 +1,43 @@
+@use '../vendor/fonts';
+@use '../abstracts/variables' as v;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: v.$sliceFinance_white;
+    color: v.$sliceFinance_black;
+    font-family: v.$sliceFinanceReg;
+}
+
+a {
+    color: inherit;
+    transition: v.$tranSimple;
+    text-transform: none;
+    &:hover {
+        color: v.$sliceFinance_primary;
+    }
+}
+
+.container {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    padding: 0 v.$spaceThick;
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+}
+
+.box-row {
+    display: flex;
+    flex-direction: row;
+    gap: v.$spaceRegular;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: v.$sliceFinance_primary;
+    font-family: v.$sliceFinanceReg;
+}

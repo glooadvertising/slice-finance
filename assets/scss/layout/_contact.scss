@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as v;
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 90vh;
+    @media screen and (max-width: 720px){
+        flex-direction: column;
+    }
+
+    .container {
+        width: v.$pageWidth;
+        gap: calc(v.$spaceUltraThick * 2);
+
+        .col-one {
+            display: flex;
+            width: 60%;
+            @media screen and (max-width: 720px){
+                width: 100%;
+            }
+        
+            .fluentform.ff-default.fluentform_wrapper_1.ffs_default_wrap {
+                width: 100%;
+                form {
+                    width: 100%;
+
+                    input, textarea {
+                        background-color: transparent;
+                        border-radius: 0;
+                        border: none;
+                        border-bottom: 1px solid v.$sliceFinance_primary;
+                        padding-left: 0;
+                        padding-right: 0;
+                        color: v.$sliceFinance_primary;
+                        &::placeholder {
+                            color: v.$sliceFinance_charcoal;
+                        }
+                    }
+                    .error.text-danger {
+                        color: v.$sliceFinance_primary;
+                    }
+                }
+            }
+
+        }
+        .col-two {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 40%;
+            @media screen and (max-width: 720px){
+                width: 100%;
+            }
+        }
+    
+    }
+}

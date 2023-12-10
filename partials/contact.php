@@ -10,7 +10,7 @@
                 <a href="tel:0417-406-960">0417 406 960</a><br>
                 <a href="mailto:shea@slicefinance.au">shea@slicefinance.au</a><br><br><br>
                 <p>
-                <?php bloginfo('name'); ?> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde magnam cumque voluptas exercitationem consequuntur corporis voluptates repellendus, aperiam natus repellat enim aliquid at. Quae ipsam nisi laudantium saepe ipsa!
+                <!-- <?php bloginfo('name'); ?> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde magnam cumque voluptas exercitationem consequuntur corporis voluptates repellendus, aperiam natus repellat enim aliquid at. Quae ipsam nisi laudantium saepe ipsa! -->
                 </p>
             </p>
             </div>
